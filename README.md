@@ -33,7 +33,7 @@ Para poner en práctica lo aprendido sobre animaciones. Hago esta landing page, 
 
 
 🚀 Sugerencias extra:
-Añade un loader con efecto tipo "proyector de cine antiguo".
+Añade un loader con efecto tipo "proyector de cine antiguo". SOLO SI REQUIERE MUCHA CARGA ALGUNA ANIMACION... tipo contador 3...2...1...
 
 Considera una versión responsive bien cuidada, ya que parallax puede ser problemático en móvil.
 
