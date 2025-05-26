@@ -38,3 +38,30 @@ Añade un loader con efecto tipo "proyector de cine antiguo". SOLO SI REQUIERE M
 Considera una versión responsive bien cuidada, ya que parallax puede ser problemático en móvil.
 
 Si usas sonido, dale opción de apagar/encender (por accesibilidad).
+
+## Elementos visuales necesarios! Assets a tener para el parallax
+
+- Objetivo: scroll descendente desde la playa hacia el tiburón
+Es como si tú, el espectador, estuvieras caminando hacia el mar… y luego, lentamente, bajaras bajo el agua.
+
+- Capas:
+
+| Capa | Nombre                     | Tipo          | `z-index`     | Comentario                                                      |
+| ---- | -------------------------- | ------------- | ------------- | --------------------------------------------------------------- |
+
+
+| 1️⃣  | **Cielo**                  | Fondo         | `z-index: 0`  | Parte superior de la pantalla. Empieza visible.                 |
+
+| 2️⃣  | **Playa**                  | Fondo         | `z-index: 1`  | Arena estática o con efecto de calor. Muy visible al principio. |
+
+| 3️⃣  | **Mar cercano (superior)** | Fondo         | `z-index: 2`  | Parte del agua vista desde fuera, con olas animadas.            |
+
+| 4️⃣  | **Mar lejano (submarino)** | Fondo         | `z-index: 3`  | Agua más profunda y oscura. A medida que haces scroll.          |
+
+| 5️⃣  | **Silueta bajo el agua**   | Flotante      | `z-index: 4`  | Tiburón visto desde dentro del agua (oscuro, difuso).           |
+
+| 6️⃣  | **Aleta del tiburón**      | Flotante      | `z-index: 5`  | Aparece conforme te acercas. Emergente.                         |
+
+| 7️⃣  | **Gaviotas**               | Flotante      | `z-index: 6`  | Volando sobre la playa y el mar al principio.                   |
+
+| 8️⃣  | **Título de la película**  | Flotante/Text | `z-index: 10` | Solo aparece tras la aleta, ya bajo el agua.                    |
