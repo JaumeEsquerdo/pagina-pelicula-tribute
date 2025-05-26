@@ -63,3 +63,26 @@ Es como si tú, el espectador, estuvieras caminando hacia el mar… y luego, len
 
 | 8️⃣  | **Fade oscuro / sumersión**    | Transición | `z-index: 10` | Se activa al terminar la intro     |
 
+### Animación esperada: 
+
+Parallax: al hacer scroll, que cada capa se mueva a distinta velocidad (transform: translateY()).
+
+Gaviotas: flotan o se mueven muy lentamente en loop.
+
+Aleta: aparece lentamente con opacity + scale.
+
+Texto “JAWS”: con fade-in + letter-spacing amplio.
+
+Fade oscuro: opacity desde 0 a 1 mientras haces scroll.
+
+- Características de las imágenes
+
+| Imagen                   | Tipo de recorte         | Formato recomendado                              |
+| ------------------------ | ----------------------- | ------------------------------------------------ |
+| Cielo                    | Completa, rectangular   | JPG o PNG sin transparencia                      |
+| Playa                    | Completa, rectangular   | JPG o PNG sin transparencia                      |
+| Mar lejano y mar cercano | Completa, rectangular   | PNG sin transparencia                            |
+| Gaviotas                 | Elemento flotante       | PNG con fondo transparente                       |
+| Aleta del tiburón        | Elemento flotante       | PNG con fondo transparente                       |
+| Fade oscuro              | Gradiente o capa CSS    | CSS (`linear-gradient`) o PNG negro transparente |
+| Texto título             | Texto HTML o imagen SVG | h1 o SVG estilizado                              |
